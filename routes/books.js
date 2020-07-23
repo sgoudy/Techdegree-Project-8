@@ -13,38 +13,34 @@ function asyncHandler(cb){
       }
     }
   }
-  
 
   /* GET full list of books. */
   router.get('/', asyncHandler(async (req, res) => {
     const books = await Book.findAll();
-    res.render("books/index", { books, title: "Library" });
+    res.render("books/index", { books });
   }));
   
 
-
-
-
-//   /* Create a new article form. */
-//   router.get('/new', (req, res) => {
-//     res.render("articles/new", { article: {}, title: "New Article" });
-//   });
+  /* Create a new book. */
+  router.get('/new', (req, res) => {
+    res.render("books/new", { book: {} });
+  });
   
-//   /* POST create article. */
-//   router.post('/', asyncHandler(async (req, res) => {
-//     let article;
-//     try {
-//       article = await Article.create(req.body);
-//       res.redirect("/articles/" + article.id);
-//     } catch (error) {
-//       if(error.name === "SequelizeValidationError") { // checking the error
-//         article = await Article.build(req.body);
-//         res.render("articles/new", { article, errors: error.errors, title: "New Article" })
-//       } else {
-//         throw error; // error caught in the asyncHandler's catch block
-//       }  
-//     }
-//   }));
+  /* POST new book to database. */
+  router.post('/', asyncHandler(async (req, res) => {
+    let book;
+    try {
+      book = await Book.create(req.body);
+      res.redirect("/books/" + book.id);
+    } catch (error) {
+      if(error.name === "SequelizeValidationError") { // checking the error
+        book = await Book.build(req.body);
+        res.render("books/new", { book, errors: error.errors, title: "New Book" })
+      } else {
+        throw error; // error caught in the asyncHandler's catch block
+      }  
+    }
+  }));
   
 //   /* Edit article form. */
 //   router.get("/:id/edit", asyncHandler(async(req, res) => {
@@ -57,16 +53,16 @@ function asyncHandler(cb){
 //     res.render("articles/edit", { article, title: "Edit Article" });
 //   }));
   
-//   /* GET individual article. */
-//   router.get("/:id", asyncHandler(async (req, res) => {
-//     const article = await Article.findByPk(req.params.id);
-//     if(article) {
-//       res.render("articles/show", { article, title: article.title });  
-//     } else {
-//       res.sendStatus(404);
-//     }
-//     res.render("articles/show", { article, title: article.title }); 
-//   }));
+  /* GET individual book. */
+  router.get("/:id", asyncHandler(async (req, res) => {
+    const book = await Book.findByPk(req.params.id);
+    if(book) {
+      res.render("books/show", { book, title: book.title });  
+    } else {
+      res.sendStatus(404);
+    }
+    res.render("books/show", { book, title: book.title }); 
+  }));
   
 //   /* Update an article. */
 //   router.post('/:id/edit', asyncHandler(async (req, res) => {

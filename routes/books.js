@@ -14,6 +14,8 @@ function asyncHandler(cb){
     }
   }
 
+
+
   /* GET full list of books. */
   router.get('/', asyncHandler(async (req, res) => {
     const books = await Book.findAll();
@@ -21,11 +23,18 @@ function asyncHandler(cb){
   }));
   
 
+
+
+
   /* Create a new book. */
   router.get('/new', (req, res) => {
     res.render("books/new", { book: {} });
   });
+
+
   
+
+
   /* POST new book to database. */
   router.post('/', asyncHandler(async (req, res) => {
     let book;
@@ -53,9 +62,17 @@ function asyncHandler(cb){
 //     res.render("articles/edit", { article, title: "Edit Article" });
 //   }));
   
+
+
+
+
+
+
+
   /* GET individual book. */
-  router.get("/:id", asyncHandler(async (req, res) => {
+  router.get('/:id', asyncHandler(async (req, res) => {
     const book = await Book.findByPk(req.params.id);
+    console.log(book)
     if(book) {
       res.render("books/show", { book, title: book.title });  
     } else {
@@ -64,6 +81,10 @@ function asyncHandler(cb){
     res.render("books/show", { book, title: book.title }); 
   }));
   
+
+
+
+
 //   /* Update an article. */
 //   router.post('/:id/edit', asyncHandler(async (req, res) => {
 //     let article;
@@ -85,29 +106,19 @@ function asyncHandler(cb){
 //       }
 //     }
 //   }));
+
   
-//   /* Delete article form. */
-//   router.get("/:id/delete", asyncHandler(async (req, res) => {
-//     const article = await Article.findByPk(req.params.id);
-//     if(article) {
-//       res.render("articles/delete", { article, title: "Delete Article" });
-//     } else {
-//       res.sendStatus(404);
-//     }
-//     res.render("articles/delete", { article, title: "Delete Article" });
-//   }));
-  
-//   /* Delete individual article. */
-//   router.post('/:id/delete', asyncHandler(async (req ,res) => {
-//     const article = await Article.findByPk(req.params.id);
-//     if(article) {
-//       await article.destroy();
-//       res.redirect("/articles");
-//     } else {
-//       res.sendStatus(404);
-//     }
-//     await article.destroy();
-//     res.redirect("/articles");
-//   }));
+  /* Delete individual article. */
+  router.post('/:id/delete', asyncHandler(async (req ,res) => {
+    const book = await Book.findByPk(req.params.id);
+    if(book) {
+      await book.destroy();
+      res.redirect("/books");
+    } else {
+      res.sendStatus(404);
+    }
+    await book.destroy();
+    res.redirect("/books");
+  }));
   
   module.exports = router;

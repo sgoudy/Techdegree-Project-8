@@ -4,7 +4,7 @@ block content
     body
     h1 Books
     p
-        a(href="books/new" class="button") Create New Book
+        a.button(href='books/new') Create New Book
     table
             tr
                 th Title
@@ -13,8 +13,8 @@ block content
                 th Year
             each book in books
                 tr
-                    td= book.title
-                        a(href="/show")
+                    td 
+                        a(href=`/books/${book.id}`)= book.title
                     td= book.author
                     td= book.genre
                     td= book.year

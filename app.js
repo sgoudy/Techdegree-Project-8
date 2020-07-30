@@ -18,21 +18,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/books', books);
 
-// catch 404 and forward to error handler
-app.use( (req, res, next) => {
-  next(createError(404));
-});
+// CATCH 404 AND FWD TO ERROR HANDLER
+// ------------------------------------------------------------------//
+app.use((req, res, next) => {
+    console.log('404 error handler called');
+    res.status(404).render("not_found")
+  });
 
-// error handler
-app.use( (err, req, res, next) => {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+// /* Global error handler */
+app.use((err, req, res, next) => {
+    if (err) {
+      console.log('Global error handler called', err);
+    } if (err.status === 404){
+        console.log('Error: 404')
+      res.status(404).render("not_found", {err});
+    } else {
+      err.message === err.message || 'General error';
+      console.log('Error: 500');
+      res.status(err.status || 500).render("server_err", {err})
+   }
+  });
 
 
 // SERVER //
@@ -40,6 +45,5 @@ app.use( (err, req, res, next) => {
 app.listen(3000, () => {
     console.log('This app is listening on localhost: 3000')
 });
-
 
 module.exports = app;

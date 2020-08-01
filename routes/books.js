@@ -19,7 +19,37 @@ function asyncHandler(cb){
 //------------------------------------------------------//
 
 router.get('/', asyncHandler(async (req, res) => { 
-    const books = await Book.findAll();
+    const books = await Book.findAll({
+        limit: 10,
+        order: [['title', 'ASC']]
+    });
+    res.render("books/index", { books });
+}));
+
+// PAGINATION FEATURE
+router.get('/page1', asyncHandler(async (req, res) => { 
+    const books = await Book.findAll({
+        limit: 10,
+        order: [['title', 'ASC']]
+    });
+    res.render("books/index", { books });
+}));
+
+router.get('/page2', asyncHandler(async (req, res) => { 
+    const books = await Book.findAll({
+        offset: 10,
+        limit: 10,
+        order: [['title', 'ASC']]
+    });
+    res.render("books/index", { books });
+}));
+
+router.get('/page3', asyncHandler(async (req, res) => { 
+    const books = await Book.findAll({
+        offset: 20,
+        limit: 10,
+        order: [['title', 'ASC']]
+    });
     res.render("books/index", { books });
 }));
   

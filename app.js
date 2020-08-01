@@ -21,8 +21,8 @@ app.use('/books', books);
 // CATCH 404 AND FWD TO ERROR HANDLER
 // ------------------------------------------------------------------//
 app.use((req, res, next) => {
-    console.log('404 error handler called');
-    res.status(404).render("not_found")
+    console.log('Global Error Handler: 404 error handler called');
+    res.status(404).render("page-not-found")
   });
 
 // /* Global error handler */
@@ -31,11 +31,11 @@ app.use((err, req, res, next) => {
       console.log('Global error handler called', err);
     } if (err.status === 404){
         console.log('Error: 404')
-      res.status(404).render("not_found", {err});
+      res.status(404).render("page-not-found", {err});
     } else {
       err.message === err.message || 'General error';
       console.log('Error: 500');
-      res.status(err.status || 500).render("server_err", {err})
+      res.status(err.status || 500).render("error", {err})
    }
   });
 

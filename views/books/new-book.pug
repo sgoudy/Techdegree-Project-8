@@ -1,11 +1,7 @@
-doctype html
-html
-    head
-        title New Book
-        link(rel="stylesheet" href="../stylesheets/style.css")
+extends ../layout
 
-    body
-        h1 New Book
-        include errors
-        form(action="/books", method="post")
-            include form
+block content
+    h1 New Book
+    include errors
+    form(action="/books", method="post")
+        include form

@@ -23,7 +23,7 @@ router.get('/', asyncHandler(async (req, res) => {
         limit: 10,
         order: [['title', 'ASC']]
     });
-    res.render("books/index", { books });
+    res.render("books/index", { books, title: "Books" });
 }));
 
 // PAGINATION FEATURE
@@ -43,22 +43,13 @@ router.get('/page2', asyncHandler(async (req, res) => {
     });
     res.render("books/index", { books });
 }));
-
-router.get('/page3', asyncHandler(async (req, res) => { 
-    const books = await Book.findAll({
-        offset: 20,
-        limit: 10,
-        order: [['title', 'ASC']]
-    });
-    res.render("books/index", { books });
-}));
   
   // CREATE A NEW BOOK THEN POST TO DATABASE
   //------------------------------------------------------//
 
   // GET FORM 
 router.get('/new', (req, res) => {
-    res.render("books/new-book", { book: {} });
+    res.render("books/new-book", { book: {}, title: "New Book"});
 });
 
   // POST BOOK 
@@ -117,18 +108,5 @@ router.post('/:id/delete', asyncHandler(async (req ,res) => {
     await book.destroy();
     res.redirect("/books");
   }));
-
-// SEARCH FUNCTION
-//------------------------------------------------------//
-  
-// GET SEARCH DETAILS
-router.get('/', asyncHandler(async (req, res) => {
-    const query = input.value;
-    console.log(query)
-    const book = await Book.findAll({
-        attributes: [query]
-    });
-    // res.render("books/show", { book, title: book.title });  
-}));
 
   module.exports = router;

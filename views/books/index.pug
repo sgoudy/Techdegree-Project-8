@@ -1,11 +1,9 @@
 extends ../layout
 
 block content
-    body
     h1 Books
     p
         a(class="button" href='/books/new') Create New Book     
-        include search
     table
         tr
             th Title
@@ -23,4 +21,3 @@ block content
     div
         a(class="button" href="/books/page1") 1 
         a(class="button" href="/books/page2") 2
-        a(class="button" href="/books/page3") 3

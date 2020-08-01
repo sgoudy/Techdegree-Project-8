@@ -35,7 +35,7 @@ app.use((err, req, res, next) => {
     } else {
       err.message === err.message || 'General error';
       console.log('Error: 500');
-      res.status(err.status || 500).render("error", {err})
+      res.status(err.status || 500).render("error", {err, title: "Page Not Found"})
    }
   });
 

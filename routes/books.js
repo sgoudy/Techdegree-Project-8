@@ -107,6 +107,15 @@ router.post('/:id/delete', asyncHandler(async (req ,res) => {
     const book = await Book.findByPk(req.params.id);
     await book.destroy();
     res.redirect("/books");
-  }));
+}));
+
+
+
+
+// router.get('/search/:query', async(req) => {
+//     console.log(req.params.query)
+    // const book = await Book.findAndCountAll(req.query);
+    // res.render("books/index", { books, title: "Search Results" });
+// })
 
   module.exports = router;

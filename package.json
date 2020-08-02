@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sgoudy/Techdegree-Project-8#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-paginate": "^1.0.2",
     "pug": "^3.0.0",
     "sequelize": "^6.3.3",
     "sequelize-cli": "^6.2.0",

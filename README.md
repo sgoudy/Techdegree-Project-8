@@ -5,7 +5,7 @@ This project is a SQL Library Manager designed to make managing libraries more i
 **In order to finish the JavaScript Full Stack Program!**
 
 ## Screenshots
-![Screenshot](http://localhost:3000/public/pro8ss.png)
+![Screenshot](http://public/pro8ss.png)
 
 ## Tech/framework used
 <b>Built with</b>

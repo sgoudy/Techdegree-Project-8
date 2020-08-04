@@ -4,15 +4,16 @@ This project is a SQL Library Manager designed to make managing libraries more i
 ## Motivation
 **In order to finish the JavaScript Full Stack Program!**
 
-## Screenshots
-![Screenshot](http://public/pro8ss.png)
-
 ## Tech/framework used
 <b>Built with</b>
 - [VSCode](https://code.visualstudio.com/)
 
 ## Features
 Search bar functionality, pagination and unique design.
+
+
+## Screenshot
+![Book Library](public/pro8ss.png?raw=true "Book Library")
 
 ## Installation
 1. run npm install

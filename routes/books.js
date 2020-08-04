@@ -110,12 +110,10 @@ router.post('/:id/delete', asyncHandler(async (req ,res) => {
 }));
 
 
-
-
-// router.get('/search/:query', async(req) => {
-//     console.log(req.params.query)
-    // const book = await Book.findAndCountAll(req.query);
-    // res.render("books/index", { books, title: "Search Results" });
-// })
+router.get('/search/:query', async(req) => {
+    console.log(req.query)
+    const book = await Book.findAndCountAll(req.query);
+    res.render("books/index", { books, title: "Search Results" });
+})
 
   module.exports = router;

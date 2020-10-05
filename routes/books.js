@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Book= require('../models').Book;
+const sequelize = require('sequelize')
+const Op = sequelize.Op;
 
 
 /* Handler function to wrap each route. */
@@ -25,6 +27,30 @@ router.get('/', asyncHandler(async (req, res) => {
     });
     res.render("books/index", { books, title: "Books" });
 }));
+
+
+// SEARCH
+router.get('/search', async(req,res) => {
+    const search = req.query.query;
+    const books = await Book.findAll({
+        where: {
+            [Op.or]: [
+            {title: {
+                [Op.like]: search+'%'
+                }
+            }
+            ,
+            {author: {
+                [Op.like]: '%'+search+'%'
+                }
+            }
+            ]
+            // title LIKE 'search%' OR description LIKE '%search%'
+            }
+        })
+    res.render("books/index", { books });
+})
+
 
 // PAGINATION FEATURE
 router.get('/page1', asyncHandler(async (req, res) => { 
@@ -58,7 +84,8 @@ router.post('/new', asyncHandler(async (req, res) => {
     try {
         book = await Book.create(req.body);
             res.redirect("/books/" + book.id);
-            } catch (error) {
+            } 
+    catch (error) {
         if(error.name === "SequelizeValidationError") { 
             book = await Book.build(req.body);
             res.render("books/new-book", { book, errors: error.errors, title: "New Book" })
@@ -67,6 +94,8 @@ router.post('/new', asyncHandler(async (req, res) => {
         }  
     }
 }));
+
+
 
 // GET BOOK DETAILS FOR EDIT / DELETE
 //------------------------------------------------------//
@@ -90,7 +119,7 @@ router.post('/:id', asyncHandler(async (req, res) => {
     try {
         let book = await Book.findByPk(req.params.id);
         await book.update(req.body)
-        res.redirect("/books/");
+        res.redirect("books/");
         } 
     catch (error) {
         if(error.name === "SequelizeValidationError") { 
@@ -106,20 +135,9 @@ router.post('/:id', asyncHandler(async (req, res) => {
 router.post('/:id/delete', asyncHandler(async (req ,res) => {
     const book = await Book.findByPk(req.params.id);
     await book.destroy();
-    res.redirect("/books");
+    res.redirect("books/");
 }));
 
 
-router.get('/search/:query', (req) => {
-    console.log(req.params.query)
-    // const book = await Book.findAndCountAll(req.query);
-    // res.render("books/index", { books, title: "Search Results" });
-})
-
-router.post('/search/:query', (req) => {
-    console.log(req.params.query)
-    // const book = await Book.findAndCountAll(req.query);
-    // res.render("books/index", { books, title: "Search Results" });
-})
 
   module.exports = router;

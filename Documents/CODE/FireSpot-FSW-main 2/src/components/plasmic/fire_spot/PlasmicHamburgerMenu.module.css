@@ -1,0 +1,10 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 300;
+}

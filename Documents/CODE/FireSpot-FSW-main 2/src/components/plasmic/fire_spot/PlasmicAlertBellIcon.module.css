@@ -1,0 +1,9 @@
+.root {
+  width: 31px;
+  height: 38px;
+  color: #fff;
+  display: block;
+  position: fixed;
+  left: 25px;
+  top: 70px;
+}

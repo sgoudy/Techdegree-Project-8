@@ -1,0 +1,361 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.iPhone11ProMax5 {
+  background: rgba(255, 255, 255, 1);
+  width: 414px;
+  height: 896px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.screenShot20210714At3392 {
+  background: url("./images/screenShot20210714At3392.png") -515.6156156156156px 0.9294605809128631px /
+    1516.5165165165165px 929.4605809128631px no-repeat;
+  width: 505px;
+  height: 896px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+.rectangle1 {
+  background: rgba(201, 159, 81, 1);
+  width: 78px;
+  height: 896px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.avatar {
+  width: 31px;
+  height: 31px;
+  display: block;
+  position: absolute;
+  top: 830px;
+  left: 23px;
+}
+.miscIconsBackground {
+  opacity: 0.379;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.iconsButton {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(241, 241, 241, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 999px;
+}
+.svg__wrvQs {
+  position: absolute;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  color: #f2f2f2;
+  display: block;
+  top: 8px;
+  left: 8px;
+}
+.svg__fDFh {
+  position: absolute;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  display: block;
+  top: 776px;
+  left: 27px;
+}
+.svg___9GlI {
+  position: absolute;
+  object-fit: cover;
+  width: 31px;
+  height: 38px;
+  color: #fff;
+  display: block;
+  top: 11.83%;
+  left: 5.55%;
+}
+.svg__ihsKi {
+  position: absolute;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  display: block;
+  top: 3.01%;
+  left: 3.62%;
+  overflow: hidden;
+}
+.img__lx4Ih {
+  position: absolute;
+  object-fit: cover;
+  width: 41px;
+  height: 41px;
+  display: block;
+  top: 622px;
+  left: 332px;
+}
+.svg__tbWqG {
+  position: absolute;
+  object-fit: cover;
+  width: 97px;
+  height: 207px;
+  color: #ff7539;
+  display: block;
+  top: 7px;
+  left: 305px;
+  border-radius: 17px;
+}
+.img__e6Hyn {
+  position: absolute;
+  object-fit: cover;
+  width: 41px;
+  height: 41px;
+  display: block;
+  top: 75px;
+  left: 340px;
+}
+.svg___8TD0 {
+  position: absolute;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #ffe710;
+  display: block;
+  top: 116px;
+  left: 105px;
+  overflow: hidden;
+}
+.svg__jPIhd {
+  position: absolute;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #ffe710;
+  display: block;
+  top: 365px;
+  left: 166px;
+  overflow: hidden;
+}
+._01 {
+  width: 304px;
+  height: 394px;
+  display: block;
+  position: absolute;
+  left: 91px;
+  bottom: 251px;
+}
+.textOnlyWithButton {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background {
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.039),
+    0px 4px 8px 0px rgba(0, 0, 0, 0.079), 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title2 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(37, 49, 55, 1);
+}
+.body {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.button {
+  width: 130px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+.labeledCentered {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background2 {
+  background: rgba(239, 239, 239, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+}
+.border {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 8px;
+}
+.label {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label2 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: rgba(14, 76, 163, 1);
+}
+.svg___4Ll66 {
+  position: absolute;
+  object-fit: cover;
+  width: 9px;
+  height: 17px;
+  color: #979797;
+  transform: scale(1, -1) rotate(-180deg);
+  display: block;
+  transform-origin: top left;
+  top: 312px;
+  left: 286px;
+}
+.svg__k5GJi {
+  position: absolute;
+  object-fit: cover;
+  width: 9px;
+  height: 17px;
+  color: #979797;
+  transform: scale(1, -1) translate(-0.0010000000000047748px, 0px);
+  display: block;
+  transform-origin: top left;
+  top: 329px;
+  left: 238px;
+}
+.button2 {
+  width: 130px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 190px;
+  bottom: 264px;
+}
+.labeledCentered2 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background3 {
+  background: rgba(239, 239, 239, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+}
+.border2 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 8px;
+}
+.label3 {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label4 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: rgba(14, 76, 163, 1);
+}
+.svg__cJwt {
+  position: absolute;
+  object-fit: cover;
+  width: 20px;
+  height: 20px;
+  color: #b9b9b9;
+  display: block;
+  top: 267px;
+  left: 359px;
+}

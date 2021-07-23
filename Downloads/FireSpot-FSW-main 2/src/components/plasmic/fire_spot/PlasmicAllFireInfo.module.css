@@ -1,0 +1,445 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.iPhone11ProMax6 {
+  background: rgba(255, 255, 255, 1);
+  width: 414px;
+  height: 896px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.rectangle1 {
+  background: rgba(201, 159, 81, 1);
+  width: 78px;
+  height: 896px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.avatar {
+  width: 31px;
+  height: 31px;
+  display: block;
+  position: absolute;
+  top: 830px;
+  left: 23px;
+}
+.miscIconsBackground {
+  opacity: 0.379;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.iconsButton {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(241, 241, 241, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 999px;
+}
+.svg___7LIpt {
+  position: absolute;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  color: #f2f2f2;
+  display: block;
+  top: 8px;
+  left: 8px;
+}
+.svg___1NdYy {
+  position: absolute;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  display: block;
+  top: 776px;
+  left: 27px;
+}
+.svg__mQaFc {
+  position: absolute;
+  object-fit: cover;
+  width: 31px;
+  height: 38px;
+  color: #fff;
+  display: block;
+  top: 11.83%;
+  left: 5.55%;
+}
+.svg__c21Cg {
+  position: absolute;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  display: block;
+  top: 3.01%;
+  left: 3.62%;
+  overflow: hidden;
+}
+._03 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 9px;
+}
+.textOnlyWithButton {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background {
+  background: rgba(215, 66, 20, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title2 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.body {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.ghostDefaultLight {
+  width: 96px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+._8 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 725px;
+}
+.textOnlyWithButton2 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background2 {
+  background: rgba(215, 66, 20, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title3 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title4 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.body2 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.ghostDefaultLight2 {
+  width: 96px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+._9 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 725px;
+}
+.fireBlock:global(.__wab_instance) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+._7 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 546px;
+}
+.textOnlyWithButton4 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background4 {
+  background: rgba(215, 66, 20, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title7 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title8 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.body4 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.ghostDefaultLight4 {
+  width: 96px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+._6 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 188px;
+}
+.textOnlyWithButton5 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background5 {
+  background: rgba(215, 66, 20, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title9 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title10 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.body5 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.ghostDefaultLight5 {
+  width: 96px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+._4 {
+  width: 287px;
+  height: 159px;
+  display: block;
+  position: absolute;
+  left: 99px;
+  bottom: 367px;
+}
+.textOnlyWithButton6 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background6 {
+  background: rgba(215, 66, 20, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title11 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title12 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.body6 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.ghostDefaultLight6 {
+  width: 96px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}

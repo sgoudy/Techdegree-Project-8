@@ -1,0 +1,37 @@
+.root {
+  width: 304px;
+  height: 311px;
+  display: block;
+  position: relative;
+}
+.alertInfoBox:global(.__wab_instance) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.svg__xzyfh {
+  position: absolute;
+  object-fit: cover;
+  width: 9px;
+  height: 17px;
+  color: #000;
+  transform: scale(1, -1) rotate(-180deg);
+  display: block;
+  transform-origin: top left;
+  top: 271px;
+  left: 286px;
+}
+.svg__bPayl {
+  position: absolute;
+  object-fit: cover;
+  width: 9px;
+  height: 17px;
+  color: #000;
+  transform: scale(1, -1) translate(-0.0010000000000047748px, 0px);
+  display: block;
+  transform-origin: top left;
+  top: 288px;
+  left: 238px;
+}

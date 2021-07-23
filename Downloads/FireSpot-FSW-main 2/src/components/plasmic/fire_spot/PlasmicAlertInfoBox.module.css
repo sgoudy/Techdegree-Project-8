@@ -1,0 +1,104 @@
+.root {
+  display: block;
+  position: relative;
+}
+.background {
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.039),
+    0px 4px 8px 0px rgba(0, 0, 0, 0.079), 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 240, 108, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+.title {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title2 {
+  display: block;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(37, 49, 55, 1);
+}
+.body {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  bottom: 64px;
+  right: 16px;
+}
+.button {
+  width: 130px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+.labeledCentered {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.background2 {
+  background: rgba(239, 239, 239, 1);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 4px;
+}
+.border {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 8px;
+}
+.label {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label2 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: rgba(14, 76, 163, 1);
+}

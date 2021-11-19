@@ -1,6 +1,9 @@
 ## Treehouse TechDegree Project #8: "SQL Library Manager"
 This project is a SQL Library Manager designed to make managing libraries more intuitive and user-friendly.
 
+## Screenshot
+![Book Library](public/pro8ss.png?raw=true "Book Library")
+
 ## Motivation
 **In order to finish the JavaScript Full Stack Program!**
 
@@ -11,9 +14,6 @@ This project is a SQL Library Manager designed to make managing libraries more i
 ## Features
 Search bar functionality, pagination and unique design.
 
-
-## Screenshot
-![Book Library](public/pro8ss.png?raw=true "Book Library")
 
 ## Installation
 1. run npm install

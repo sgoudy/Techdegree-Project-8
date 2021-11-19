@@ -1,0 +1,167 @@
+body {
+  padding: 10px 50px 50px;
+  font: 18px "Garamond", serif;
+  background-image: url ("/book.png");
+  background: teal;
+}
+
+a {
+  color: #445477;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+  a:hover {
+    color: black;
+  }
+
+a.button, input[type=submit] {
+  color: white;
+  background: #0a5543;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 14px 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+form a.button, input[type=submit] {
+  margin-left: 140px;
+  transition: 0.4s;
+}
+
+input[type=submit] {
+  border: 0;
+}
+
+a.button:hover, input[type=submit]:hover {
+  background-color: #01b189;
+}
+
+p {
+  margin: 20px auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+}
+
+h1{
+  color: white;
+}
+
+h2 {
+  border-top: 2px solid #e7e7e7;
+  padding-top: 20px;
+}
+
+table{
+  background-color: white;
+}
+
+th {
+  border-bottom: 2px solid #D8B493;
+  text-align: left;
+  padding: 5px 20px 5px 10px;
+}
+
+tr {
+  min-height: 50px;
+}
+
+tr:nth-child(2n) {
+  background: #E7E7E7;
+}
+
+td {
+  padding: 5px 20px 5px 10px;
+}
+
+label {
+  font-weight: bold;
+  min-width: 130px;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+input {
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  border-color: #E7E7E7;
+  transition: 0.4s;
+}
+
+input[type=text] {
+  margin-left: 7px;
+  width: 300px;
+}
+
+.error {
+  color: rgb(236, 15, 15);
+}
+
+button{
+  color: white;
+  background: #019875;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 14px 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.IndexView {
+  background: url("../book.png");
+  background-size: cover;
+}
+
+.new_book{
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px 12px 0px;
+  color: black;
+  background: lightgrey;
+}
+
+.search{
+  color: white;
+  background: #0a5543;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search:hover{
+  background-color: #01b189;
+}
+
+.pages{
+  border: white 2px solid;
+  margin: 2px
+}
+
+.background{
+  background-color: aliceblue;
+  padding: .5em;
+}
+
+.error_list{
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: 80%;
+  background: lightgrey;
+}

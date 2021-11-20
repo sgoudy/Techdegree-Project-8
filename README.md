@@ -1,6 +1,8 @@
 ## Treehouse TechDegree Project #8: "SQL Library Manager"
 This project is a SQL Library Manager designed to make managing libraries more intuitive and user-friendly.
 
+## Functionality can be viewed at Heroku site but SQLite will not be modified except on localhost:5000
+
 ## Screenshot
 ![Book Library](public/pro8ss.png?raw=true "Book Library")
 
@@ -18,7 +20,7 @@ Search bar functionality, pagination and unique design.
 ## Installation
 1. run npm install
 2. run npm start
-3. voila!
+3. open localhost:5000
 
 ## How to use?
 This project uses the DB Browser for SQLite to manage inputs from the user. App is self-explanatory. Pagination links will require manual manipulation as information is added.
